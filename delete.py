@@ -1,5 +1,6 @@
 import discord
 import time
+import os
 
 client = discord.Client()
 
@@ -23,4 +24,5 @@ async def on_message(message):
     time.sleep(5)
     await name.delete()
 
+access_token = os.environ['BOT_TOKEN']
 client.run("Nzk2MDI4MjE0MTg3MTMwOTMx.X_R9Cw.YzG0EPyK2cCFJ1ORf0sla5yOVJY")
